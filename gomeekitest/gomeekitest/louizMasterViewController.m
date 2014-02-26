@@ -97,6 +97,7 @@
     NSDictionary *dic = [_objects objectAtIndex:indexPath.row];
     NSString *currentValue = [dic objectForKey:@"title"];
     [[cell textLabel]setText:currentValue];
+    [[cell detailTextLabel]setText:[dic objectForKey:@"short_description"]];
     
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
     
