@@ -58,7 +58,7 @@
     
     NSString *status =[[allCourses objectForKey:@"status"]objectForKey:@"code"];
     
-    CGRect display1 = CGRectMake(0, 60, [[UIScreen mainScreen] applicationFrame].size.width, 30);
+    CGRect display1 = CGRectMake(0, [[UIScreen mainScreen] applicationFrame].origin.y, [[UIScreen mainScreen] applicationFrame].size.width, 30);
     
     CGRect display2 = CGRectMake(0,display1.origin.y+display1.size.height,200 , 200);
     
