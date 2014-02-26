@@ -46,7 +46,7 @@
         
         NSArray *articles = [[allCourses objectForKey:@"data"] objectForKey:@"articles"];
         
-        NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:NO];
+        NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:YES];
         NSArray *descriptors = [NSArray arrayWithObject: descriptor];
         NSArray *reverseOrder = [articles sortedArrayUsingDescriptors:descriptors];
         
