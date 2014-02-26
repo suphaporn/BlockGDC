@@ -385,6 +385,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gomeekitest/gomeekitest-Prefix.pch";
 				INFOPLIST_FILE = "gomeekitest/gomeekitest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -399,6 +400,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gomeekitest/gomeekitest-Prefix.pch";
 				INFOPLIST_FILE = "gomeekitest/gomeekitest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -465,6 +467,7 @@
 				0FE32BE718BE0ADF009FA623 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FE32BE818BE0ADF009FA623 /* Build configuration list for PBXNativeTarget "gomeekitestTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +476,7 @@
 				0FE32BEA18BE0ADF009FA623 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
