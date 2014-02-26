@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@class louizDetailViewController;
 
 @interface louizMasterViewController : UITableViewController
 
-@property (strong, nonatomic) louizDetailViewController *detailViewController;
 
 @end

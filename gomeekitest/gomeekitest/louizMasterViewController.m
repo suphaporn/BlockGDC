@@ -31,6 +31,8 @@
     [super viewDidLoad];
     self.title = @"Sport";
     
+   
+    
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://mobiletest.gomeekisystems.com/category_sport.json"]];
     
     NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
@@ -98,6 +100,7 @@
     NSDictionary *dic = [_objects objectAtIndex:indexPath.row];
     NSString *currentValue = [dic objectForKey:@"title"];
     [[cell textLabel]setText:currentValue];
+    
     [[cell detailTextLabel]setText:[dic objectForKey:@"short_description"]];
     
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
@@ -115,6 +118,7 @@
     
     return cell;
 }
+
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
