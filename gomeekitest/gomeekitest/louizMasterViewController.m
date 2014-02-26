@@ -29,6 +29,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Sport";
     
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://mobiletest.gomeekisystems.com/category_sport.json"]];
     
@@ -42,7 +43,7 @@
     NSString *status =[[allCourses objectForKey:@"status"]objectForKey:@"code"];
     
     if ([status isEqualToString:@"200"]) {
-        NSLog(@"%@",allCourses);
+        //NSLog(@"%@",allCourses);
         
         NSArray *articles = [[allCourses objectForKey:@"data"] objectForKey:@"articles"];
         
